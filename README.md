@@ -7,7 +7,7 @@
  
  Starałem się w każdym programie wykonać procedurę start , aby program automatycznie wyświetlił opis obrazu.
 
-Obraz1
+# Obraz1
 
 reguły:
 plane_left.
@@ -19,7 +19,7 @@ plane_have.
 
 start. - opisujący cały obrazek
 
-Obraz6
+# Obraz6
 
 reguły:
 parent(X,Y).
@@ -36,7 +36,7 @@ greatgrandchild.
 
 start. - opisujący cały obrazek
 
-Obraz8
+# Obraz8
 
 reguły:
 drinkstogether(X,Y). 
