@@ -64,25 +64,25 @@ aeroplane(theBack,verticalstabilizer).
 
 
 
-a :- aeroplane(onTheleft,Y), have(Y), format(' ~w\n', [Y]),fail. 
-b :- aeroplane(onTheRight,Y), have(Y), format(' ~w\n', [Y]),fail. 
-c :- aeroplane(fromtheFront,Y), have(Y), format(' ~w\n', [Y]),fail. 
-d :- aeroplane(theBack,Y), have(Y), format(' ~w\n', [Y]),fail.
-e :- can(X), format(' ~w\n',[X]),fail.
-f :- isthere(X), format(' ~w\n',[X]),fail.
+plane_left :- aeroplane(onTheleft,Y), have(Y), format(' ~w\n', [Y]),fail. 
+plane_right :- aeroplane(onTheRight,Y), have(Y), format(' ~w\n', [Y]),fail. 
+plane_front :- aeroplane(fromtheFront,Y), have(Y), format(' ~w\n', [Y]),fail. 
+plane_back :- aeroplane(theBack,Y), have(Y), format(' ~w\n', [Y]),fail.
+plane_do :- can(X), format(' ~w\n',[X]),fail.
+plane_have :- isthere(X), format(' ~w\n',[X]),fail.
 
 
 start :- write('On the picture 1 we will see:'),nl,
     write('---Airbus A380--- with details:'),nl,
     write('The plane on the left side has:'),nl,
-    a;
+    plane_left;
     write('The plane on the Right side has:'),nl,
-	b;
+	plane_right;
 	write('In front of the plane is:'),nl,
-    c;
+    plane_front;
     write('on the back of the plane is:'),nl,
-    d;
+    plane_back;
     write('This plane can:'),nl,
-    e;
+    plane_do;
     write('Color of this plane is:'),nl,
-    f.
+    plane_have.
