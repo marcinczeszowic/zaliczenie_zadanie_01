@@ -19,6 +19,22 @@ plane_have.
 
 start. - opisujący cały obrazek
 
+Obraz6
+
+reguły:
+parent(X,Y).
+grandmother(X, Y).
+grandfather(X, Y).
+greatgrandmother(X,Y).
+greatgrandfather(X,Y).
+great_grandmother.
+great_grandfather.
+grand_mother.
+grand_father.
+grandchild.
+greatgrandchild.
+
+start. - opisujący cały obrazek
 
 Obraz8
 
