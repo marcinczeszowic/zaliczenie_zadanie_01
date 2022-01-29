@@ -74,46 +74,30 @@ likes(ross,icecream).
 likes(ross,deser).
 
 
-a :- likes(X,Y), food(Y), format(' ~w likes ~w\n', [X,Y]),fail. 
+likes :- likes(X,Y), food(Y), format(' ~w likes ~w\n', [X,Y]),fail. 
 
-b :- drinkstogether(X,icecoffe), format(' ~w\n', [X]),fail.	
+drinks_together_icecoffe :- drinkstogether(X,icecoffe), format(' ~w\n', [X]),fail.	
 
-c :- drinkstogether(X,icelatte), format(' ~w\n', [X]),fail.
+drinks_together_icelatte :- drinkstogether(X,icelatte), format(' ~w\n', [X]),fail.
 
-d :- friends(X), format(' ~w\n', [X]),fail.
+friends_name :- friends(X), format(' ~w\n', [X]),fail.
 
-e :- love(lover1,X), format(' ~w\n', [X]),fail.
-f :- love(lover2,X), format(' ~w\n', [X]),fail.
+couple1 :- love(lover1,X), format(' ~w\n', [X]),fail.
+couple2 :- love(lover2,X), format(' ~w\n', [X]),fail.
 
-Start :- write('On the picture 8 we will see: '),nl,
+start :- write('On the picture 8 we will see: '),nl,
 	  write('Friends with name: '),nl,
-	d;
+	friends_name;
 	write('First three friends drink together icecoffe'),nl,
 	fail, nl;
-	b;
+	drinks_together_icecoffe;
 	write('Second three friends drink together icelatte'),nl,
 	fail, nl;
-	c;
+	drinks_together_icelatte;
     write('Here are two married couple'),nl,
     fail, nl;
-    e;
+    couple1;
     write('and'),nl,
-    f;
+    couple2;
     write('Everybady likes...'),nl,
-    a.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    likes.
