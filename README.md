@@ -10,8 +10,30 @@ Starałem się w każdym programie wykonać procedurę start , aby program autom
 Obraz1
 
 reguły:
+plane_left.
+plane_right.
+plane_front.
+plane_back.
+plane_do.
+plane_have.
 
+start. - opisujący cały obrazek
+
+
+Obraz8
+
+reguły:
 drinkstogether(X,Y). 
 friends(X). 
 couple(X,Y). 
 maried(X, Y).
+
+likes.
+drinks_together_icecoffe.
+drinks_together_icelatte.
+friends_name.
+couple1.
+couple2.
+
+start. - opisujący cały obrazek
+
